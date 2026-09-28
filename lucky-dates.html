@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Lucky Date Finder — Best Chinese Dates for Weddings, Openings & Moving"
+desc: "Rank every day of any month for weddings, business openings, moving house or signing contracts using Chinese number symbolism and lunar calendar customs (Ghost Month aware)."
+nav: lucky
+crumb: "Lucky Date Finder"
+schema: {"@context":"https://schema.org","@type":"WebApplication","name":"00550 Lucky Date Finder","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+---
+<div class="page-hero"><div class="wrap">
+  <div class="breadcrumb"><a href="index.html">Home</a> › Lucky Date Finder</div>
+  <h1>Lucky Date Finder</h1>
+  <p class="lead">Pick a month and an occasion. We rank every day using digit symbolism, festivals and lunar calendar customs.</p>
+</div></div>
+<section style="padding-top:28px">
+  <div class="wrap with-side">
+    <div>
+      <div class="card">
+        <form id="lucky-form" class="form">
+          <div class="row">
+            <div><label for="lucky-month">Month</label><input id="lucky-month" type="month" required></div>
+            <div><label for="lucky-event">Occasion</label><select id="lucky-event"><option value="wedding">Wedding</option><option value="opening">Business opening / launch</option><option value="moving">Moving house</option><option value="signing">Signing a contract</option><option value="travel">Travel</option></select></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Rank the month</button>
+        </form>
+        <form id="single-date-form" class="form mt"><label for="single-date">…or check a single date</label><div class="big-input" style="box-shadow:none"><input id="single-date" type="date" required><button class="btn btn-ghost" type="submit">Check</button></div></form>
+        <div id="single-out" class="result"></div>
+      </div>
+      <div id="lucky-out" class="result mt" aria-live="polite"></div>
+      <div class="prose mt">
+        <h2>How Chinese families pick dates</h2>
+        <ul>
+          <li><b>Digits:</b> dates with 6, 8 and 9 are favoured; 4 is avoided. Wedding registrations spike on 5/20 and dates containing 1314.</li>
+          <li><b>Ghost Month:</b> the 7th lunar month is traditionally avoided for weddings, moves and openings.</li>
+          <li><b>Festivals:</b> Qixi (7th day of the 7th lunar month) is the traditional lovers' day; Lunar New Year and Mid-Autumn are family days.</li>
+          <li><b>Almanac (黄历):</b> a traditional almanac lists “suitable” and “avoid” activities for each day by its stem-branch; formal date selection (择日) also considers the couple's birth charts.</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <div class="ad" data-ad="sidebar" style="margin:0"></div>
+      <div class="card"><span class="tag red">Service</span><h3 style="margin-top:8px">Need a date shortlist?</h3><p class="small muted">We'll send 3–5 recommended dates for your launch or event, with the reasoning.</p><a class="btn btn-primary btn-sm" href="services.html#audit">Request dates</a></div>
+    </aside>
+  </div>
+</section>

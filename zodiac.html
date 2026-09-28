@@ -1,0 +1,54 @@
+---
+layout: default
+title: "Chinese Zodiac & Five Elements Calculator — Sign, Element, Lucky Numbers"
+desc: "Find your true Chinese zodiac sign and element from your birth date (lunar calendar aware), your lucky numbers and colours, and check zodiac compatibility."
+nav: zodiac
+crumb: "Zodiac & Elements"
+schema: {"@context":"https://schema.org","@type":"WebApplication","name":"00550 Chinese Zodiac & Five Elements Calculator","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+---
+<div class="page-hero"><div class="wrap">
+  <div class="breadcrumb"><a href="index.html">Home</a> › Zodiac &amp; Elements</div>
+  <h1>Chinese Zodiac &amp; Five Elements</h1>
+  <p class="lead">Born in January or February? Your sign depends on the Lunar New Year date, not January 1. This calculator uses the Chinese lunar calendar.</p>
+</div></div>
+<section style="padding-top:28px">
+  <div class="wrap with-side">
+    <div>
+      <div class="card">
+        <h2>Find your sign &amp; element</h2>
+        <form id="zodiac-form" class="big-input"><label for="birth" class="sr-only">Birth date</label><input id="birth" type="date" required min="1900-01-31" max="2099-12-31"><button class="btn btn-primary" type="submit">Reveal</button></form>
+        <div id="zodiac-out" class="result" aria-live="polite"></div>
+      </div>
+
+      <h2 class="mt">The 12 animals</h2>
+      <p class="muted">Tap an animal for its traits, lucky numbers and years.</p>
+      <div class="zgrid" data-zgrid="info"></div>
+      <div id="zinfo" class="mt"></div>
+
+      <div class="card mt" id="compat">
+        <h2>Zodiac compatibility</h2>
+        <form id="compat-form" class="form"><div class="row"><div><label for="za">Your sign</label><select id="za"></select></div><div><label for="zb">Their sign</label><select id="zb"></select></div></div><button class="btn btn-primary" type="submit">Check match</button></form>
+        <div id="compat-out" class="result"></div>
+      </div>
+
+      <div class="prose mt">
+        <h2>The Five Elements (五行 Wǔ Xíng)</h2>
+        <p>The number 5 is central to Chinese thought: five elements, five directions, five blessings (五福). Each lunar year pairs one of 12 animals with one of five elements (and yin or yang), giving a 60-year cycle.</p>
+        <table><thead><tr><th>Element</th><th>Numbers</th><th>Direction</th><th>Colour</th><th>Nature</th></tr></thead><tbody>
+          <tr><td>🌳 Wood 木</td><td>3, 8</td><td>East</td><td>Green</td><td>Growth, creativity</td></tr>
+          <tr><td>🔥 Fire 火</td><td>2, 7</td><td>South</td><td>Red</td><td>Passion, leadership</td></tr>
+          <tr><td>⛰️ Earth 土</td><td>5, 0</td><td>Centre</td><td>Yellow</td><td>Stability, trust</td></tr>
+          <tr><td>⚙️ Metal 金</td><td>4, 9</td><td>West</td><td>White</td><td>Discipline, clarity</td></tr>
+          <tr><td>💧 Water 水</td><td>1, 6</td><td>North</td><td>Black / blue</td><td>Wisdom, flow</td></tr>
+        </tbody></table>
+        <p><b>Generating cycle:</b> Wood → Fire → Earth → Metal → Water → Wood. <b>Controlling cycle:</b> Wood → Earth → Water → Fire → Metal → Wood.</p>
+        <p class="small muted">Number–element pairings follow the traditional Hé Tú (河图) scheme; feng shui schools vary.</p>
+      </div>
+    </div>
+    <aside class="side">
+      <div class="ad" data-ad="sidebar" style="margin:0"></div>
+      <div class="card"><h3>Planning a wedding or launch?</h3><p class="small muted">Match the date to your sign with the Lucky Date Finder.</p><a class="btn btn-primary btn-sm" href="lucky-dates.html">Find lucky dates</a></div>
+      <div class="card"><h3>Get your personal report</h3><p class="small muted">A printable summary of your sign, element, lucky numbers and best dates for the coming year, sent by email.</p><a class="btn btn-gold btn-sm" href="services.html#report">Request report</a></div>
+    </aside>
+  </div>
+</section>

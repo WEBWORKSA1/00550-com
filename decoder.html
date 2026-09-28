@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Chinese Number Decoder — Is Your Number Lucky? (Phone, Plate, Price, Date)"
+desc: "Free Chinese lucky number checker. Score any phone number, license plate, price, address, date or domain for luck, see Mandarin and Cantonese homophones and hidden slang phrases."
+nav: decoder
+crumb: "Number Decoder"
+schema: {"@context":"https://schema.org","@type":"WebApplication","name":"00550 Chinese Number Decoder","applicationCategory":"LifestyleApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+---
+<div class="page-hero"><div class="wrap">
+  <div class="breadcrumb"><a href="index.html">Home</a> › Number Decoder</div>
+  <h1>Chinese Number Decoder</h1>
+  <p class="lead">Type any number to get a luck score, both pronunciations, hidden phrases and a digit-by-digit breakdown.</p>
+</div></div>
+<section style="padding-top:28px">
+  <div class="wrap with-side">
+    <div>
+      <form id="decoder-form" class="form">
+        <div class="big-input">
+          <label for="decoder-input" class="sr-only">Number</label>
+          <input id="decoder-input" inputmode="numeric" placeholder="Enter any number…" autocomplete="off" required>
+          <button class="btn btn-primary" type="submit">Decode</button>
+        </div>
+        <div class="row">
+          <div><label for="decoder-type">What is it?</label>
+            <select id="decoder-type"><option value="general">Any number</option><option value="phone">Phone number</option><option value="plate">License plate</option><option value="price">Price</option><option value="date">Date (YYYYMMDD)</option><option value="address">Address / unit / floor</option><option value="domain">Numeric domain</option></select></div>
+          <div><label>Quick examples</label><div class="pill-row"><button type="button" class="pill" data-try="00550">00550</button><button type="button" class="pill" data-try="5201314">5201314</button><button type="button" class="pill" data-try="13888886688">138-8888-6688</button><button type="button" class="pill" data-try="4144">4144</button></div></div>
+        </div>
+      </form>
+      <div id="decoder-out" class="result" aria-live="polite"></div>
+
+      <div class="card mt" id="name">
+        <h2>Name number</h2>
+        <p class="muted">Turn your name (in Latin letters) into a single number with Pythagorean numerology, then see what that digit means in Chinese tradition.</p>
+        <form id="name-form" class="big-input"><label for="name-input" class="sr-only">Name</label><input id="name-input" placeholder="Your name" autocomplete="name" required><button class="btn btn-primary" type="submit">Calculate</button></form>
+        <div id="name-out" class="result"></div>
+      </div>
+
+      <div class="prose mt">
+        <h2>How to read your result</h2>
+        <p><b>Score 85+</b>: a very auspicious number, rich in 8, 6 and 9 with no 4s. <b>70–84</b>: auspicious. <b>55–69</b>: balanced, fine for everyday use. <b>Below 55</b>: contains numbers or pairs that many people avoid, such as 4, 14 or 74.</p>
+        <h3>Why the last digit matters</h3>
+        <p>Buyers of phone numbers and plates look hardest at the ending, because it's the part people remember. That's why numbers ending in 8 or 88 get a premium and our scoring weights the final digit twice.</p>
+        <h3>Mandarin vs Cantonese</h3>
+        <p>The same digit can sound lucky in one dialect and unlucky in another. We show both readings so you can judge for your audience. For high-stakes choices like brand launches, hotline numbers or pricing, <a href="services.html#audit">ask for a human review</a>.</p>
+      </div>
+    </div>
+    <aside class="side">
+      <div class="card"><h3>Popular checks</h3><div class="pill-row"><a class="pill" href="?n=8888">8888</a><a class="pill" href="?n=168">168</a><a class="pill" href="?n=518">518</a><a class="pill" href="?n=9420">9420</a><a class="pill" href="?n=250">250</a><a class="pill" href="?n=748">748</a></div></div>
+      <div class="ad" data-ad="sidebar" style="margin:0"></div>
+      <div class="card"><span class="tag red">Pro</span><h3 style="margin-top:8px">Buying or selling a lucky number?</h3><p class="small muted">We connect buyers and sellers of premium phone numbers, plates and numeric domains.</p><a class="btn btn-primary btn-sm" href="services.html#numbers">Tell us what you need</a></div>
+    </aside>
+  </div>
+</section>

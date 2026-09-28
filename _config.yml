@@ -1,0 +1,14 @@
+title: "00550.com"
+description: "Decode any number the Chinese way — lucky numbers, number slang, zodiac and Five Elements."
+url: "https://00550.com"
+baseurl: ""
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+include:
+  - ads.txt
+  - robots.txt
